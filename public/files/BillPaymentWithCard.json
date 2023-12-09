@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "596bca3d-ebf1-463e-95aa-8a569f72653e",
+		"name": "BillPaymentWithCard",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "BillPaymentWithCard",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"MerchantCode\": 3,\r\n\t\"TerminalCode\": 115,\r\n\t\"CardNumber\": \"5892101011403040\",\r\n\t\"Pin2\": \"12345\",\r\n\t\"Cvv2\": \"3333\",\r\n\t\"ExpireMonth\": \"01\",\r\n\t\"ExpireYear\": \"04\",\r\n\t\"BillIdentificationArg\": \"1234\",\r\n\t\"PaymentIdentificationArg\": \"12345679\",\r\n\t\"Email\": \"\",\r\n\t\"Mobile\": \"\",\r\n\t\"ClientIP\": \"\",\r\n\t\"Terminal\": \"Internet\",\r\n\t\"TransactionId\": \"C5222-Eeba95fb48d664287b670aef7d243a271-20220228101136248-3448\",\r\n\t\"DestCommandID\": 1,\r\n\t\"TransactionDate\": \"2023/04/12 10:40:30\",\r\n\t\"IsUndefinedBill\": false,\r\n\t\"Amount\": 230000,\r\n\t\"Track2\": \"5892101012341234=5892101012341234\",\r\n\t\"PinBlock\": \"12\",\r\n\t\"AppName\": \"123\"\r\n}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/IPG/BillPayment",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"IPG",
+						"BillPayment"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "e17c1cbf-d8f6-4283-a49d-39f23a1d28a6",
+		"name": "TransferPaya",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TransferPaya",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Amount\": \"10000\",\r\n    \"DestinationIban\": \"IR460120010000004108733354\",\r\n    \"RecieverFullName\": \"حامد تقوی\",\r\n    \"TransactionDate\": \"14020210\",\r\n    \"SourceDepNum\": \"100200300400\",\r\n    \"Description\": \"توضیحات\",\r\n    \"TransactionId\": \"34\",\r\n    \"IsAutoVerify\": \"True\",\r\n    \"SrcComment\": \"پایا شارژ حساب\",\r\n    \"DetailType\": \"\",\r\n    \"DestComment\": \"\",\r\n    \"NationalCode\": \"\",\r\n    \"PhoneNumber\": \"\",\r\n    \"MobileNumber\": \"\",\r\n    \"Address\": \"\",\r\n    \"CommissionDepositNumber\": \"\",\r\n    \"TransactionBillNumber\": \"\"\r\n}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/TransferPublic/TransferPaya",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"TransferPublic",
+						"TransferPaya"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

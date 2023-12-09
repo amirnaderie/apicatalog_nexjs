@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "35f56838-1886-4dd2-a231-cb9682ce99ec",
+		"name": "GetPersonImg",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27919260"
+	},
+	"item": [
+		{
+			"name": "GetPersonImg",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "default"
+					},
+					{
+						"key": "Accept-Version",
+						"value": "2",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"CardSerial\":\"6G11111111\",\"NationalId\":\"0221356551\"}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/SabteAhval/GetPersonImg",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"SabteAhval",
+						"GetPersonImg"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "7915438b-b093-495e-8fae-6212f6cf511a",
+		"name": "CardAuthenticateFromSwitch",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CardAuthenticateFromSwitch",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"cardnumber\": \"5892101011403040\",\r\n\t\"pin2\": \"135791\",\r\n\t\"cvv2\": \"3333\",\r\n\t\"expireMonth\": \"01\",\r\n\t\"expireYear\": \"04\",\r\n    \"terminal\": \"1\",\r\n\t\"eMail\": \"\",\r\n\t\"clientIP\": \"\",\r\n\t\"appName\": \"\",\r\n\t\"cardHolderMobileNo\": \"\"\r\n}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/IPG/CardAuthenticateFromSwitch",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"IPG",
+						"CardAuthenticateFromSwitch"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

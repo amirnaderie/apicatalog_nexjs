@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "1761a9a0-8db7-4a55-8e02-63abdacffef1",
+		"name": "GetIbanByDepositNumber",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetIbanByDepositNumber",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"DepositNumber\": \"100200300400\"}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Api/GetIbanByDepositNumber",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Api",
+						"GetIbanByDepositNumber"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

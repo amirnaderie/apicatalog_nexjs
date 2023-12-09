@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "57ee25e7-b4c5-4521-940d-df2d321b4d00",
+		"name": "GetCardBalance",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27919260"
+	},
+	"item": [
+		{
+			"name": "GetCardBalance",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"cardnumber\": \"5892101011403040\",\r\n\t\"pin2\": \"12345678\",\r\n\t\"cvv2\": \"3333\",\r\n\t\"expireMonth\": \"01\",\r\n\t\"expireYear\": \"04\",\r\n\t\"eMail\": \"\",\r\n\t\"clientIP\": \"\",\r\n\t\"terminal\": \"\",\r\n\t\"appName\": \"\",\r\n\t\"cardHolderMobileNo\": \"\",\r\n\t\"loadCard\": \"\"\r\n}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/IPG/GetCardBalance",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"IPG",
+						"GetCardBalance"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

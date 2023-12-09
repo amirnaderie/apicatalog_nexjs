@@ -1,0 +1,12 @@
+-- CreateTable
+CREATE TABLE "Menu" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "name" TEXT NOT NULL
+);
+
+-- CreateTable
+CREATE TABLE "subMenu" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "parentId" INTEGER NOT NULL,
+    "name" TEXT NOT NULL
+);

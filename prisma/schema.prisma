@@ -1,0 +1,35 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model API {
+  id       Int     @id @default(autoincrement())
+  parentId Int
+  name     String
+  title    String
+  desc     String
+  type     String
+  submenu  SubMenu   @relation(fields: [parentId], references: [id])
+}
+
+model Menu {
+  id       Int       @id @default(autoincrement())
+  name     String
+  submenus SubMenu[]
+}
+
+model SubMenu {
+  id       Int    @id @default(autoincrement())
+  parentId Int
+  name     String
+  menu     Menu   @relation(fields: [parentId], references: [id])
+  apsi     API[]
+}

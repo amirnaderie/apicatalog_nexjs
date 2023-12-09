@@ -1,0 +1,74 @@
+(node:932) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+ ⨯ upstream image response failed for /images/Api64.png TypeError: fetch failed
+    at Object.fetch (node:internal/deps/undici/undici:11372:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async globalThis.fetch (D:\Install\Nextjs\api_catalog\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:111:13700)
+    at async invokeRequest (D:\Install\Nextjs\api_catalog\node_modules\next\dist\server\lib\server-ipc\invoke-request.js:17:12)
+    at async D:\Install\Nextjs\api_catalog\node_modules\next\dist\server\next-server.js:592:35
+    at async imageOptimizer (D:\Install\Nextjs\api_catalog\node_modules\next\dist\server\image-optimizer.js:576:13)
+    at async cacheEntry.imageResponseCache.get.incrementalCache (D:\Install\Nextjs\api_catalog\node_modules\next\dist\server\next-server.js:176:65)
+    at async D:\Install\Nextjs\api_catalog\node_modules\next\dist\server\response-cache\index.js:93:36
+    at async D:\Install\Nextjs\api_catalog\node_modules\next\dist\lib\batcher.js:41:32 {
+  cause: AggregateError
+      at internalConnectMultiple (node:net:1114:18)
+      at afterConnectMultiple (node:net:1667:5)
+      at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+ ⨯ upstream image response failed for /images/Api64.png TypeError: fetch failed
+    at Object.fetch (node:internal/deps/undici/undici:11372:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async globalThis.fetch (D:\Install\Nextjs\api_catalog\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:111:13700)
+    at async invokeRequest (D:\Install\Nextjs\api_catalog\node_modules\next\dist\server\lib\server-ipc\invoke-request.js:17:12)
+    at async D:\Install\Nextjs\api_catalog\node_modules\next\dist\server\next-server.js:592:35
+    at async imageOptimizer (D:\Install\Nextjs\api_catalog\node_modules\next\dist\server\image-optimizer.js:576:13)
+    at async cacheEntry.imageResponseCache.get.incrementalCache (D:\Install\Nextjs\api_catalog\node_modules\next\dist\server\next-server.js:176:65)
+    at async D:\Install\Nextjs\api_catalog\node_modules\next\dist\server\response-cache\index.js:93:36
+    at async D:\Install\Nextjs\api_catalog\node_modules\next\dist\lib\batcher.js:41:32 {
+  cause: AggregateError
+      at internalConnectMultiple (node:net:1114:18)
+      at afterConnectMultiple (node:net:1667:5)
+      at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+ ⨯ upstream image response failed for /images/Api64.png TypeError: fetch failed
+    at Object.fetch (node:internal/deps/undici/undici:11372:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async globalThis.fetch (D:\Install\Nextjs\api_catalog\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:111:13700)
+    at async invokeRequest (D:\Install\Nextjs\api_catalog\node_modules\next\dist\server\lib\server-ipc\invoke-request.js:17:12)
+    at async D:\Install\Nextjs\api_catalog\node_modules\next\dist\server\next-server.js:592:35
+    at async imageOptimizer (D:\Install\Nextjs\api_catalog\node_modules\next\dist\server\image-optimizer.js:576:13)
+    at async cacheEntry.imageResponseCache.get.incrementalCache (D:\Install\Nextjs\api_catalog\node_modules\next\dist\server\next-server.js:176:65)
+    at async D:\Install\Nextjs\api_catalog\node_modules\next\dist\server\response-cache\index.js:93:36
+    at async D:\Install\Nextjs\api_catalog\node_modules\next\dist\lib\batcher.js:41:32 {
+  cause: AggregateError
+      at internalConnectMultiple (node:net:1114:18)
+      at afterConnectMultiple (node:net:1667:5)
+      at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+ ⨯ upstream image response failed for /images/Api64.png TypeError: fetch failed
+    at Object.fetch (node:internal/deps/undici/undici:11372:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async globalThis.fetch (D:\Install\Nextjs\api_catalog\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:111:13700)
+    at async invokeRequest (D:\Install\Nextjs\api_catalog\node_modules\next\dist\server\lib\server-ipc\invoke-request.js:17:12)
+    at async D:\Install\Nextjs\api_catalog\node_modules\next\dist\server\next-server.js:592:35
+    at async imageOptimizer (D:\Install\Nextjs\api_catalog\node_modules\next\dist\server\image-optimizer.js:576:13)
+    at async cacheEntry.imageResponseCache.get.incrementalCache (D:\Install\Nextjs\api_catalog\node_modules\next\dist\server\next-server.js:176:65)
+    at async D:\Install\Nextjs\api_catalog\node_modules\next\dist\server\response-cache\index.js:93:36
+    at async D:\Install\Nextjs\api_catalog\node_modules\next\dist\lib\batcher.js:41:32 {
+  cause: AggregateError
+      at internalConnectMultiple (node:net:1114:18)
+      at afterConnectMultiple (node:net:1667:5)
+      at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "7b6338c0-cb2e-4eb0-ab1b-3ca3cd4de861",
+		"name": "InternalTransfer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "InternalTransfer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"TransactionId\": \"\",\r\n\t\"TransferBillNumber\": \"\",\r\n\t\"SourceAccount\": \"100200300400\",\r\n\t\"DocumentItemType\": \"Deposit\",\r\n\t\"SourceAmount\": 2,\r\n\t\"SourceComment\": \"test\",\r\n\t\"Creditors\": [\r\n\t\t{\r\n\t\t\t\"DestinationAccount\": \"101102103104\",\r\n\t\t\t\"DocumentItemType\": \"Deposit\",\r\n\t\t\t\"DestinationAmount\": 1,\r\n\t\t\t\"DestinationComment\": \"test1\"\r\n\t\t}\r\n\t]\r\n}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Api/InternalTransfer",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Api",
+						"InternalTransfer"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

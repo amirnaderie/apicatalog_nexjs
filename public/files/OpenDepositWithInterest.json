@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "f11fd3ef-4b83-4ee7-9f11-aeb2fcf61ece",
+		"name": "OpenDepositWitInterest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "OpenDepositWithInterest",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"DeposType\": \"1900\",\r\n    \"Currency\": \"IRR\",\r\n    \"Amount\": \"553000\",\r\n    \"SourceDeposit\": \"100200300400\",\r\n    \"DestDeposit\": \"100200300400\",\r\n    \"CustomerNumber\": \"123321456\",\r\n    \"CurrentBranchCode\": \"1\"\r\n}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/API/OpenDepositWithInterest",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"API",
+						"OpenDepositWithInterest"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

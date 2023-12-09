@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "e1afca1c-a845-4a88-89df-db126050ca68",
+		"name": "LoadCategoryTypes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27919260"
+	},
+	"item": [
+		{
+			"name": "LoadCategoryTypes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "default"
+					},
+					{
+						"key": "Accept-Version",
+						"value": "2",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"CategoryName\":\"EDUCATION\"}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Api/LoadCategoryTypes",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Api",
+						"LoadCategoryTypes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

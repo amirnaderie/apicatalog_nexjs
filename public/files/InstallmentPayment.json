@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "4cbeb55b-cba3-43d7-bf4b-97bfc71b8f72",
+		"name": "InstallmentPayment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "InstallmentPayment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"FileNumber\": \"1-1-10018-1\",\r\n\t\"Amount\": \"15000000\",\r\n\t\"AccountNumber\": \"101102103104\",\r\n\t\"Type\": \"DEPOSIT\",\r\n\t\"EffectiveDate\": \"\",\r\n\t\"TransactionId\": \"1234-Eb660bdb9eda647f59e980dd8629cc4f0-2619\"\r\n}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Api/InstallmentPayment",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Api",
+						"InstallmentPayment"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

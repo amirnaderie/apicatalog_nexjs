@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "79763912-be9c-4340-91a2-09e122c4d8fc",
+		"name": "TransferSatna",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TransferSatna",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Amount\": \"650000000\",\r\n    \"DestionationDepNum\": \"IR460120010000004108733354\",\r\n    \"RecieverName\": \"حامد\",\r\n    \"RecieverlastName\": \"تقوی\",\r\n    \"TransactionDate\": \"14020210\",\r\n    \"SourceDepNum\": \"100200300400\",\r\n    \"Description\": \"توضیحات\",\r\n    \"TransactionId\": \"1255\",\r\n    \"DetailType\": \"\",\r\n    \"IsAutoVerify\": \"True\",\r\n    \"TransactionBillNumber\": \"\",\r\n    \"CommissionDepositNumber\": \"\"\r\n}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/TransferPublic/TransferSatna",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"TransferPublic",
+						"TransferSatna"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

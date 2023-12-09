@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "0ad066b4-75dd-4d5e-ac1c-6383094b3f24",
+		"name": "InquiryOtherBankIbanInfo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27919260"
+	},
+	"item": [
+		{
+			"name": "InquiryOtherBankIbanInfo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Iban\":\"IR460570000002122232425267\",\"PaymentId\":\"\"}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Api/InquiryOtherBankIbanInfo",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Api",
+						"InquiryOtherBankIbanInfo"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

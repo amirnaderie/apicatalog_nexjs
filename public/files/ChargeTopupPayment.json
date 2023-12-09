@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "5e6965c2-ae87-4c6a-a616-d119e32a97eb",
+		"name": "ChargeTopupPayment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ChargeTopupPayment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"CardNumber\": \"5892101011403040\",\r\n\t\"Pin2\": \"1234\",\r\n\t\"Cvv2\": \"3333\",\r\n\t\"ExpireMonth\": \"01\",\r\n\t\"ExpireYear\": \"04\",\r\n\t\"Email\": \"\",\r\n\t\"ClientIP\": \"\",\r\n\t\"TransactionDate\": \"\",\r\n\t\"TransactionId\": \"C5163-E1848199a7f65520d8c642a1beef715a5-20210731135410567-3363\",\r\n\t\"Terminal\": \"InternetBank\",\r\n\t\"MerchantCode\": 3,\r\n\t\"TerminalCode\": 115,\r\n\t\"ProductCode\": \"13\",\r\n\t\"CardAmount\": 10000,\r\n\t\"Mobile\": \"09111111111\",\r\n\t\"AppName\": \"\",\r\n\t\"ChargeCompany\": \"9937\",\r\n\t\"verifyIndex\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/IPG/ChargeTopupPayment",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"IPG",
+						"ChargeTopupPayment"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

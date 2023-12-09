@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "bf14f5ef-fc69-4ec5-8fad-d1c75b113e72",
+		"name": "BlockDeposit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "BlockDeposit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"DepositNumber\": \"101102103104\",\r\n\t\"ReceiptDate\": \"1402/01/26\",\r\n\t\"Title\": \"مسدودی واریز\",\r\n\t\"Context\": \"انسداد واریز به سپرده\",\r\n\t\"Number\": \"140201260947\",\r\n\t\"Date\": \"1402/01/20\",\r\n\t\"Deadline\": \"1402/01/26\",\r\n\t\"CauseCode\": \"otherBlockCause\",\r\n\t\"BlockOrUnblockPassword\": \"\",\r\n\t\"ContextImage\": \"\",\r\n\t\"SwiftCode\": \"IRR\"\r\n}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/BlockUnblock/BlockDeposit",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"BlockUnblock",
+						"BlockDeposit"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

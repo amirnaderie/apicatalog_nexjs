@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "6be188e6-d9fa-4749-9d8f-cf1238594f97",
+		"name": "ServiceMatchingId",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27919260"
+	},
+	"item": [
+		{
+			"name": "ServiceMatchingId",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "default"
+					},
+					{
+						"key": "Accept-Version",
+						"value": "2",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"ServiceNumber\":\"09111111111\",\"ServiceType\":2,\"IdentificationType\":0,\"IdentificationNo\":\"0221356551\"}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Shahkar/ServiceMatchingId",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Shahkar",
+						"ServiceMatchingId"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

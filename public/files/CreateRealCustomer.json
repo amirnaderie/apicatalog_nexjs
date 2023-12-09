@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "85cbc732-e4e7-456a-bf12-0f3f4161bd4e",
+		"name": "CreateRealCustomer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27919260"
+	},
+	"item": [
+		{
+			"name": "CreateRealCustomer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "default"
+					},
+					{
+						"key": "Accept-Version",
+						"value": "2",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Religion\": \"\",\r\n    \"ReligionId\": \"45223\",\r\n    \"Title\": \"\",\r\n    \"TitleId\": \"46720\",\r\n    \"CustomerGroup\": \"\",\r\n    \"CustomerGroupId\": \"656164387\",\r\n    \"Education\": \"\",\r\n    \"EducationId\": \"5553\",\r\n    \"ResidentialStatus\": \"\",\r\n    \"ResidentialStatusId\": \"45252\",\r\n    \"Surname\": \"\",\r\n    \"SurnameId\": \"40227171\",\r\n    \"Sex\": \"\",\r\n    \"SexId\": \"46346\",\r\n    \"RegisterLocation\": \"\",\r\n    \"RegisterLocationId\": \"8410\",\r\n    \"BirthLocation\": \"\",\r\n    \"BirthLocationId\": \"46947\",\r\n    \"Country\": \"\",\r\n    \"CountryId\": \"46945\",\r\n    \"BirthCountry\": \"\",\r\n    \"BirthCountryId\": \"46945\",\r\n    \"Marriage\": \"\",\r\n    \"MarriageId\": \"44001\",\r\n    \"FirstName\": \"امیر\",\r\n    \"LastName\": \"طاهری\",\r\n    \"FatherName\": \"علی\",\r\n    \"MotherName\": \"\",\r\n    \"GrandFatherName\": \"\",\r\n    \"BirthDate\": \"1354/05/11\",\r\n    \"BirthCertificateNo\": \"1\",\r\n    \"BirthCertificateSerialNo\": \"666666\",\r\n    \"NationalCode\": \"0221356551\",\r\n    \"NationalCodeSerialNumber\": \"6G11111111\",\r\n    \"ContactNumber\": \"09111111111\",\r\n    \"RegisterZoneNumber\": \"\",\r\n    \"SerialType\": \"\",\r\n    \"SerialTypeId\": \"46334\",\r\n    \"CellPhoneNumber\": \"09111111111\",\r\n    \"VerifiedCellPhoneNumber\": \"false\",\r\n    \"SignatureOrStampPicture\": \"\",\r\n    \"Addresses\": [\r\n        {\r\n            \"AddressHidden\": \"ستارخان خیابان جهانی نسب نبش هشتم پلاک سی\",\r\n            \"CustomerAddress\": \"ستارخان خیابان جهانی نسب نبش هشتم پلاک سی\",\r\n            \"Email\": \"amir.taheri1354@gmail.com\",\r\n            \"Fax\": \"02144546475\",\r\n            \"PostalCode\": \"1111111111\",\r\n            \"PhoneNo\": \"02144546474\",\r\n            \"Telex\": \"\",\r\n            \"CellphoneNo\": \"09111111111\",\r\n            \"Type\": \"\",\r\n            \"TypeId\": \"45124\",\r\n            \"State\": \"تهران \",\r\n            \"StateId\": \"46946\",\r\n            \"City\": \"\",\r\n            \"CityId\": \"46947\",\r\n            \"MainStreet\": \"خیابان اصلی \",\r\n            \"Alley\": \"کوچه \",\r\n            \"Plaque\": \"پلاک \",\r\n            \"Floor\": \"طبقه \",\r\n            \"Unit\": \"واحد \"\r\n        }\r\n    ],\r\n    \"Jobs\": [\r\n        {\r\n            \"JobType\": \"کارمند \",\r\n            \"JobTypeId\": \"6841\",\r\n            \"JobDescription\": \"Test\"\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Api/CreateRealCustomer",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Api",
+						"CreateRealCustomer"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

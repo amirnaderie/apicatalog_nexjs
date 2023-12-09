@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "a4f0b63b-d5ed-431b-9332-74cf8c28ed60",
+		"name": "GetAccountInfo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAccountInfo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"DepositNumberOrIBAN\":\"100200300400\"}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Api/GetAccountInfo",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Api",
+						"GetAccountInfo"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

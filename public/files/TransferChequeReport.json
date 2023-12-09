@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "a07084af-50aa-40cd-b589-80649729be3f",
+		"name": "TransferChequeReport",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TransferChequeReport",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"DepositNumber\": \"1122223344550\",\r\n\t\"AmountFrom\": \"\",\r\n\t\"AmountTo\": \"\",\r\n\t\"ChequeDateFrom\": \"\",\r\n\t\"ChequeDateTo\": \"\",\r\n\t\"DepositDateFrom\": \"1401/01/01\",\r\n\t\"DepositDateTo\": \"1401/03/31\",\r\n\t\"SayadId\": \"\",\r\n\t\"ChequeState\": \"\",\r\n\t\"ChequeNumber\": \"\",\r\n\t\"OwnerBankCode\": \"\",\r\n\t\"OwnerBranchCode\": \"\"\r\n}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Api/TransferChequeReport",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Api",
+						"TransferChequeReport"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

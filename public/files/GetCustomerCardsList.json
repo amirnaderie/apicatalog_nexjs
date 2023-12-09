@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "911416e1-287d-4c72-87e9-f6dc3908fc61",
+		"name": "GetCustomerCardsList",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27919260"
+	},
+	"item": [
+		{
+			"name": "GetCustomerCardsList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"CustomerNumber\": \"123321456\",\"NationalCode\": \"\"}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Api/GetCustomerCardsList",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Api",
+						"GetCustomerCardsList"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

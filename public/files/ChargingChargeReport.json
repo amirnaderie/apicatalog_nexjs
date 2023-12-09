@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "36b78e50-d272-4e23-92dd-a2f227a61b2f",
+		"name": "ChargingChargeReport",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ChargingChargeReport",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"AccountNumber\": \"\",\r\n\t\"Pan\": \"5892101011403040\",\r\n\t\"FromDate\": \"1402/01/05\",\r\n\t\"ToDate\": \"1402/01/25\",\r\n\t\"TerminalType\": \"2\",\r\n\t\"ChargeType\": \"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Charging/ChargeReport",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Charging",
+						"ChargeReport"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

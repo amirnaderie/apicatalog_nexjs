@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "065d2535-4302-47ee-920a-abf76e5fbbda",
+		"name": "GetLoanList",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetLoanList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"FileNumber\": \"1111-1234-123456789-1\",\r\n\t\"CustomerNumber\": \"\",\r\n\t\"LoanTypeCode\": \"\",\r\n\t\"StatusCode\": \"\",\r\n\t\"FromDate\": \"\",\r\n\t\"ToDate\": \"\",\r\n\t\"firstIndex\": \"0\",\r\n\t\"maxCount\": 1,\r\n\t\"FirstInstallment\": \"2\",\r\n\t\"MaxInstallmentCount\": \"\"\r\n}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Api/GetLoanList",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Api",
+						"GetLoanList"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

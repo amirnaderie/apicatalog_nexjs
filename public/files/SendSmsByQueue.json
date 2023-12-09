@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "87f7df66-c022-460b-a6cc-fd925a80aac9",
+		"name": "SendSmsByQueue",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27919260"
+	},
+	"item": [
+		{
+			"name": "SendSmsByQueue",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "default"
+					},
+					{
+						"key": "Accept-Version",
+						"value": "2",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"MessageBody\": \"پیام تستی\",\r\n    \"MobileNumbers\": [\r\n        \"09111111111\",\r\n        \"09123456789\"\r\n    ],\r\n    \"SmsType\": \"Info\",\r\n    \"TerminalType\": 3\r\n}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Api/SendSmsByQueue",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Api",
+						"SendSmsByQueue"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

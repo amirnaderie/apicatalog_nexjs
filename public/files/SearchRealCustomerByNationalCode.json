@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "d272c59d-852a-470b-9d0a-0e97f7a3e86a",
+		"name": "SearchRealCustomerByNationalCode",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SearchRealCustomerByNationalCode",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"NationalCode\":\"0221356551\"}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Api/SearchRealCustomerByNationalCode",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Api",
+						"SearchRealCustomerByNationalCode"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

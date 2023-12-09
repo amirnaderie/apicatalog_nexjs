@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "12349c8d-1e63-4502-9c8d-09fd7b3dc1e4",
+		"name": "InquiryBrokerDepositNumber",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27919260"
+	},
+	"item": [
+		{
+			"name": "InquiryBrokerDepositNumber",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Iban\":\"IR530150000000100200300400\",\"BrokerId\":\"12345\"}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Api/InquiryBrokerDepositNumber",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Api",
+						"InquiryBrokerDepositNumber"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "8afd41ec-b117-40eb-ba0a-3cbfa58405d6",
+		"name": "IssueDocument",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27919260"
+	},
+	"item": [
+		{
+			"name": "IssueDocument",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"TransactionId\": \"1111-4LmqKK50nz4t2VNy3vnugAwLUOLntRwn8-20230703173712187-3994\",\r\n\t\"TransferBillNumber\": \"\",\r\n\t\"DocumentTitle\": \"transfer\",\r\n\t\"DocumentItem\": [\r\n\t\t{\r\n\t\t\t\"IsDeptor\": true,\r\n\t\t\t\"AccountNumber\": \"100200300400\",\r\n\t\t\t\"DocumentItemType\": \"DEPOSIT\",\r\n\t\t\t\"BranchCode\": \"\",\r\n\t\t\t\"Amount\": 500,\r\n\t\t\t\"Comment\": \"bed1\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"IsDeptor\": false,\r\n\t\t\t\"AccountNumber\": \"101102103104\",\r\n\t\t\t\"DocumentItemType\": \"DEPOSIT\",\r\n\t\t\t\"BranchCode\": \"\",\r\n\t\t\t\"Amount\": 500,\r\n\t\t\t\"Comment\": \"bes1\"\r\n\t\t}\r\n\t]\r\n}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/API/IssueDocument",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"API",
+						"IssueDocument"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

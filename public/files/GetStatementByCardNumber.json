@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "6139c435-0b57-4a90-a7db-c266034c1551",
+		"name": "GetStatementByCardNumber",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetStatementByCardNumber",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"CardNumber\":\"5892101011403040\",\"FromDate\":\"1402/01/08\",\"ToDate\":\"1402/01/08\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Api/GetStatementByCardNumber",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Api",
+						"GetStatementByCardNumber"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

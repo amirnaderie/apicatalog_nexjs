@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "195bec7e-14a8-43f8-949e-d1c2c0ca475e",
+		"name": "ConvertCardNumberToIbanAndDeposit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27919260"
+	},
+	"item": [
+		{
+			"name": "ConvertCardNumberToIbanAndDeposit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"CardNumber\": \"5892101011403040\"}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/CMS/ConvertCardNumberToIbanAndDeposit",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"CMS",
+						"ConvertCardNumberToIbanAndDeposit"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

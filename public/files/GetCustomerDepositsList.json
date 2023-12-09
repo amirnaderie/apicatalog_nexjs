@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "c2999e6a-6089-4869-97bc-e2aa9451afb0",
+		"name": "GetCustomerDepositsList",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetCustomerDepositslist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"NationalCode\": \"\",\"CustomerNumber\": \"123321456\"}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Api/GetCustomerDepositsList",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Api",
+						"GetCustomerDepositsList"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

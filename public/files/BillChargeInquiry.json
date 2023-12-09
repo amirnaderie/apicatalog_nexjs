@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "de991fd1-e462-43fd-9492-5a08be4962e1",
+		"name": "BillChargeInquiry",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "BillChargeInquiry",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"BillId\":\"1234567891234\",\"PaymentId\":\"55203763\"}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/BillCharge/Inquiry",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"BillCharge",
+						"Inquiry"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

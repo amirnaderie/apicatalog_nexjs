@@ -1,0 +1,61 @@
+@tailwind base;
+
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: var(--secondary-scroll) var(--primary-scroll);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--primary-scroll);
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-scroll);
+  border-radius: 14px;
+  border: 3px solid var(--primary-scroll);
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "yekan";
+  src: url("/fonts/yekan/Yekan.eot");
+  src: local("☺"), url("/fonts/yekan/Yekan.woff") format("woff"),
+    url("/fonts/yekan/Yekan.ttf") format("truetype"),
+    url("/fonts/yekan/Yekan.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --primary-scroll: rgb(255, 255, 255);
+  --secondary-scroll: rgb(208, 224, 253);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+@layer components {
+  .burger-divs {
+    @apply bg-[#ffa07a] mt-1 w-8 rounded-lg  transition-all duration-300 origin-left;
+  }
+}
+body {
+  direction: rtl;
+  font-family: "yekan";
+}

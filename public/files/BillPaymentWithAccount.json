@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "89eb6355-e736-40e5-8012-7ce55e3256d8",
+		"name": "BillPaymentWithAccount",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "BillPaymentWithAccount",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"TransactionId\": \"557454\",\r\n\t\"PaymentId\": \"55203763\",\r\n\t\"BillId\": \"1234567891234\",\r\n\t\"Amount\": 552000,\r\n\t\"DepositNumber\": \"100200300400\",\r\n\t\"TerminalType\": \"59\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/BillCharge/BillPaymentWithAccount",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"BillCharge",
+						"BillPaymentWithAccount"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

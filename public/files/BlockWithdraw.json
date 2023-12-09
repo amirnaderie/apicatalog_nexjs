@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "a8e2a825-2e26-4d19-aaa3-1e3eaee12e68",
+		"name": "BlockWithdraw",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "BlockWithdraw",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"DepositNumber\": \"101102103104\",\r\n\t\"ReceiptDate\": \"1402/01/27\",\r\n\t\"Title\": \"مسدودی برداشت\",\r\n\t\"Context\": \"انسداد برداشت از سپرده\",\r\n\t\"Number\": \"140201271615\",\r\n\t\"Date\": \"1402/01/21\",\r\n\t\"Deadline\": \"1402/01/27\",\r\n\t\"CauseCode\": \"otherBlockCause\",\r\n\t\"BlockOrUnblockPassword\": \"\",\r\n\t\"ContextImage\": \"\",\r\n\t\"SwiftCode\": \"IRR\"\r\n}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/BlockUnblock/BlockWithdraw",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"BlockUnblock",
+						"BlockWithdraw"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

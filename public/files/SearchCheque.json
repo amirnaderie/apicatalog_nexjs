@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "edd526cf-ea3e-42ab-9ceb-e4f1ceae5edd",
+		"name": "SearchCheque",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SearchCheque",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"ChequeBookId\": \"\",\r\n\t\"FromChequeDepositDate\": \"\",\r\n\t\"ToChequeDepositDate\": \"\",\r\n\t\"FromChequeDate\": \"\",\r\n\t\"ToChequeDate\": \"\",\r\n\t\"IssuerBankId\": 15,\r\n\t\"MinChequeAmount\": \"\",\r\n\t\"MaxChequeAmount\": \"\",\r\n\t\"ChequeNumber\": \"\",\r\n\t\"FirstResult\": 0,\r\n\t\"MaxResult\": 100,\r\n\t\"CommittedDepositNumber\": \"\",\r\n\t\"PayeeDepositNumber\": \"\",\r\n\t\"ChequeStateId\": \"\",\r\n\t\"CurrencyId\": \"\",\r\n\t\"SayadSerialNumber\": \"2030405060708090\",\r\n\t\"IssuerBranchCode\": \"\",\r\n\t\"Blocked\": \"\",\r\n\t\"IssuableMICR\": \"\",\r\n\t\"AvailableInCurrentBranch\": \"\",\r\n\t\"ResolvedNegative\": false,\r\n\t\"IssuableCheque\": false\r\n}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Api/SearchCheque",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Api",
+						"SearchCheque"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

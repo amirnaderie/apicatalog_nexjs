@@ -1,0 +1,43 @@
+{
+  "short_name": "بازارچه API",
+  "name": "بازارچه API امید تک",
+  "icons": [
+    
+    {
+      "src": "images/Api16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "images/Api32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "images/Api64.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "images/Api96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "images/Api144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "images/maskableApi32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "orientation ":"portrait-primary"
+}

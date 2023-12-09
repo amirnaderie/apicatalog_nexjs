@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "cac1d4ac-87eb-4ee0-b304-f81f35dd7ae2",
+		"name": "NationalCodeDepositNumberMatchingVer02",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "NationalCodeDepositNumberMatchingVer02",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"NationalId\": \"0221356551\",\r\n\t\"DepositOrIbanNumber\": \"IR530150000000100200300400\"\r\n}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Api/NationalCodeDepositNumberMatchingVer02",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Api",
+						"NationalCodeDepositNumberMatchingVer02"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

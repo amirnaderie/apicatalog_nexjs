@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "5308fdca-ff86-4b08-a445-1117cfb36d65",
+		"name": "CardReports",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CardReports",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"DateFrom\": \"14011215\",\r\n\t\"DateTo\": \"14020129\",\r\n\t\"TimeFrom\": null,\r\n\t\"TimeTo\": null,\r\n\t\"CardNumber\": \"5892101011403040\",\r\n\t\"Action\": \"1005\",\r\n\t\"SeqCounter\": \"\",\r\n\t\"ReferenceNumber\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/ExBi/CardReports",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"ExBi",
+						"CardReports"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

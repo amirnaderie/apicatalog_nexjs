@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "5673a519-3911-4028-a85e-81e63e5aab3c",
+		"name": "PolPaymentOrder",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PolPaymentOrder",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"TransactionId\": \"1111-1233214561111111111111111-20230517160028409-1111\",\r\n\t\"Identifier\": \"IR530150000000100200300400\",\r\n\t\"IdentifierType\": 1,\r\n\t\"CustomerNumber\": \"123321456\",\r\n\t\"Amount\": 10000,\r\n\t\"DestIBAN\": \"IR460570000002122232425267\",\r\n\t\"TerminalType\": 2,\r\n\t\"Description\": \"واریز جهت شارژ حساب\",\r\n\t\"PurposeCode\": 10,\r\n\t\"WithOutInquiry\": false,\r\n\t\"CreditorFullName\": \"\",\r\n\t\"PaymentId\": \"\",\r\n\t\"EffectiveDate\": \"\"\r\n}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Pol/PolPaymentOrder",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Pol",
+						"PolPaymentOrder"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

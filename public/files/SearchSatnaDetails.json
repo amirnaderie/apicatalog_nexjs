@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "32940209-5f8d-41d9-bd39-4b8e3692196c",
+		"name": "SearchSatnaDetails",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SearchSatnaDetails",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"firstResult\": 0,\r\n\t\"maxResult\": 1,\r\n\t\"RequestFromDate\": \"1402/01/15\",\r\n\t\"RequestToDate\": \"1402/01/15\",\r\n\t\"SourceDepositNumberOrIban\": \"\",\r\n\t\"typeId\": \"\",\r\n\t\"FromAmount\": \"\",\r\n\t\"ToAmount\": \"\",\r\n\t\"Status\": \"\",\r\n\t\"TransactionNumber\": \"\",\r\n\t\"CustomerNumber\": \"\",\r\n\t\"BranchCode\": \"\",\r\n\t\"ReferenceNumber\": \"0201150151611174\",\r\n\t\"DestinationIban\": \"\",\r\n\t\"ReceiverFirstName\": \"\",\r\n\t\"ReceiverLastName\": \"\"\r\n}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Api/SearchSatnaDetails",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Api",
+						"SearchSatnaDetails"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

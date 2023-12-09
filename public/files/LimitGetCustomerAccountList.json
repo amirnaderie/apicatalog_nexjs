@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "3030307b-2c76-4d80-aeae-dd658f81e42b",
+		"name": "LimitGetCustomerAccountList",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "LimitGetCustomerAccountList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"NationalId\": \"0221356551\"}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Api/LimitGetCustomerAccountList",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Api",
+						"LimitGetCustomerAccountList"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

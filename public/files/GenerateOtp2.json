@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "7deb2132-805d-4d3f-b166-05d6cca47d0b",
+		"name": "GenerateOtp2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27919260"
+	},
+	"item": [
+		{
+			"name": "GenerateOtp2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"CardNumber\": \"5892101011403040\",\r\n\t\"Amount\": \"700000\",\r\n\t\"TerminalTypeCode\": \"59\",\r\n\t\"Action\": \"00\",\r\n\t\"CardAcceptorUrl\": \"test.ir\",\r\n\t\"CardAcceptorEmail\": \"info@test.ir\",\r\n\t\"CardAcceptorTel\": \"22334455\",\r\n\t\"CardAcceptorName\": \"\",\r\n\t\"PayeeCard\": \"\",\r\n\t\"AcceptorTerminalId \": \"\",\r\n\t\"OtpRequesterId \": \"\",\r\n\t\"SendSMS\": true\r\n}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Harim/GenerateOtp2",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Harim",
+						"GenerateOtp2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

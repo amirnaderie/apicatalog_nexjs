@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "2db3c8c8-e09d-4791-b5f3-cfc1202bd1c7",
+		"name": "InquiryPersonByNidBirthDate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27919260"
+	},
+	"item": [
+		{
+			"name": "InquiryPersonByNidBirthDate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "default"
+					},
+					{
+						"key": "Accept-Version",
+						"value": "2",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"BirthDate\":\"13540511\",\"NationalId\":\"0221356551\"}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/SabteAhval/InquiryPersonByNidBirthDate",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"SabteAhval",
+						"InquiryPersonByNidBirthDate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

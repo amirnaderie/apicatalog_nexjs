@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "834664f5-cba5-4722-bb7a-dd684b4b7cb2",
+		"name": "IssuedChequeReport",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "IssuedChequeReport",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"CommitedDepositNumber\": \"1122223344550\",\r\n\t\"ChequeAmountFrom\": \"\",\r\n\t\"ChequeAmountTo\": \"\",\r\n\t\"ChequeSeri\": \"\",\r\n\t\"ChequeSerialFrom\": \"493022\",\r\n\t\"ChequeSerialTo\": \"493022\",\r\n\t\"SayadSerialNumber\": \"\",\r\n\t\"ChequeStateId\": \"\",\r\n\t\"ChequeDateFrom\": \"1400/01/01\",\r\n\t\"ChequeDateTo\": \"1400/01/31\",\r\n\t\"ChequeDepositDateFrom\": \"\",\r\n\t\"ChequeDepositDateTo\": \"\"\r\n}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Api/IssuedChequeReport",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Api",
+						"IssuedChequeReport"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

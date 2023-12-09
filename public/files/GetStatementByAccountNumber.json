@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "5682afa0-da9f-46cc-8184-385bb10bdd2a",
+		"name": "GetStatementByAccountNumber",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetStatementByAccountNumber",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"AccountNumber\":\"100200300400\",\"FromDate\":\"1401/11/18\",\"ToDate\":\"1401/11/18\",\"FromTime\":\"00:00:00.00000\",\"ToTime\":\"23:59:59.99999\",\"ResultCount\":\"\",\"FirstResult\":\"\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Api/GetStatementByAccountNumber",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Api",
+						"GetStatementByAccountNumber"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

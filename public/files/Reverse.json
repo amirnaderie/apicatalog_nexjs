@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "c3e13e08-d3a3-43d7-b9cc-3905ff242bdc",
+		"name": "Reverse",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Reverse",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"TransactionId\": \"A1200-Eiop751796023465caaccb269fec074a5-20230419143641573-5001\",\r\n\t\"IsAsync\": false\r\n}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Api/Reverse",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Api",
+						"Reverse"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

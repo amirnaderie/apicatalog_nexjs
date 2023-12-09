@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "49b0c03f-f559-4a89-a484-7982d402c28d",
+		"name": "InternalGroupTransfer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "InternalGroupTransfer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"TransactionId\": \"\",\r\n\t\"TransferBillNumber\": \"\",\r\n\t\"SourceAccount\": \"100200300400\",\r\n\t\"DocumentItemType\": \"Deposit\",\r\n\t\"SourceAmount\": 2,\r\n\t\"SourceComment\": \"test\",\r\n\t\"Creditors\": [\r\n\t\t{\r\n\t\t\t\"DestinationAccount\": \"101102103104\",\r\n\t\t\t\"DocumentItemType\": \"Deposit\",\r\n\t\t\t\"DestinationAmount\": 1,\r\n\t\t\t\"DestinationComment\": \"test1\"\r\n\t\t},\r\n        {\r\n\t\t\t\"DestinationAccount\": \"1122223344550\",\r\n\t\t\t\"DocumentItemType\": \"Deposit\",\r\n\t\t\t\"DestinationAmount\": 1,\r\n\t\t\t\"DestinationComment\": \"test2\"\r\n\t\t}\r\n\t]\r\n}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Api/InternalGroupTransfer",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Api",
+						"InternalGroupTransfer"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

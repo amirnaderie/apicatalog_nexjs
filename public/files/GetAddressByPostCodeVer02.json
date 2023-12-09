@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "70c68f72-1d73-4b07-a62e-23a11f801180",
+		"name": "GetAddressByPostCodeVer02",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27919260"
+	},
+	"item": [
+		{
+			"name": "GetAddressByPostCodeVer02",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "default"
+					},
+					{
+						"key": "Accept-Version",
+						"value": "2",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ClientBatchID\": 31,\r\n    \"PostCodes\": [\r\n        {\r\n            \"ClientRowID\": 32123123,\r\n            \"PostCode\": \"1111111111\"\r\n        },\r\n        {\r\n            \"ClientRowID\": 1233213,\r\n            \"PostCode\": \"1111111112\"\r\n        },\r\n        {\r\n            \"ClientRowID\": 12342123,\r\n            \"PostCode\": \"1111111113\"\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Post/GetAddressByPostCodeVer02",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Post",
+						"GetAddressByPostCodeVer02"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

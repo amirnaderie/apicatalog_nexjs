@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "8d9cfacd-2eda-41a7-a1ce-9030bcc18e8d",
+		"name": "UnBlockingAccount",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "UnBlockingAccount",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"TransactionDate\":\"1402/01/08\",\"TransactionTime\":\"13:23:50.1\",\"DepositNumberOrIban\":\"100200300400\",\"OperatorCode\":\"1111\",\"TerminalNumber\":\"123\",\"ReasonBlockingAccount\":\"otherBlockCause\",\"LetterDate\":\"1402/01/08\",\"LetterNumber\":\"140201081323\",\"Applicant\":\"Test\",\"Amount\":\"4\",\"TraceNumber\":\"349950720613\"}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/API/UnBlockingAccount",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"API",
+						"UnBlockingAccount"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "1d36bf10-dedc-45e4-8252-dffe2b3aaafb",
+		"name": "GetTransactionStatus",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27919260"
+	},
+	"item": [
+		{
+			"name": "GetTransactionStatus",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "default"
+					},
+					{
+						"key": "Accept-Version",
+						"value": "2",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"UID\":\"1111-ZCHJtQOXJFAqtlO8g1hPds5tZ4jwzCVD-1234\"}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Api/Inquiry/GetTransactionStatus",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Api",
+						"Inquiry",
+						"GetTransactionStatus"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

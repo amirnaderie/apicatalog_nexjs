@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "ce98d698-2d38-427e-a42a-60b5a13a98db",
+		"name": "SearchPayaDetails",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SearchPayaDetails",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"SourceDepositNumberOrIban\": \"100200300400\",\r\n\t\"TransactionNumber\": \"\",\r\n\t\"FromDate\": \"1402/01/27\",\r\n\t\"ToDate\": \"1402/01/27\",\r\n\t\"FromTransactionDate\": \"\",\r\n\t\"ToTransactionDate\": \"\",\r\n\t\"Status\": \"\",\r\n\t\"FromAmount\": \"\",\r\n\t\"ToAmount\": \"\",\r\n\t\"DestinationIban\": \"\",\r\n\t\"FirstResult\": \"0\",\r\n\t\"MaxResult\": \"5\",\r\n\t\"FileUniqueIdentifier\": \"\",\r\n\t\"ReceiverFirstName\": \"\",\r\n\t\"ReceiverLastName\": \"\",\r\n\t\"BranchCode\": \"\",\r\n\t\"BankerId\": \"\",\r\n\t\"Bank\": \"\"\r\n}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Api/SearchPayaDetails",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Api",
+						"SearchPayaDetails"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "7d866a9d-8af0-4f87-ab43-5bbc8f3dfe0d",
+		"name": "BillChargeBillReport",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "BillChargeBillReport",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"AccountNumber\": \"100200300400\",\r\n\t\"Pan\": \"\",\r\n\t\"FromDate\": \"1402/01/27\",\r\n\t\"ToDate\": \"1402/01/27\"\r\n}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/BillCharge/BillReport",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"BillCharge",
+						"BillReport"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

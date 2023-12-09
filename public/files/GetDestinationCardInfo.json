@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "5ced7a65-900a-4ba3-830c-ddd51869a815",
+		"name": "GetDestinationCardInfo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27919260"
+	},
+	"item": [
+		{
+			"name": "GetDestinationCardInfo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "default"
+					},
+					{
+						"key": "Accept-Version",
+						"value": "2",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"MerchantCode\": \"10\",\r\n\t\"TerminalCode\": \"20\",\r\n\t\"SourceCardNumber\": \"5892101011403040\",\r\n\t\"DestinationCardNumber\": \"6037101011403040\",\r\n\t\"Pin2\": \"12032015\",\r\n\t\"Cvv2\": \"3333\",\r\n\t\"ExpireMonth\": \"01\",\r\n    \"ExpireYear\": \"04\",\r\n    \"Amount\": \"1000000\",\r\n    \"Terminal\": \"3\",\r\n    \"AppName\": \"test\",\r\n    \"ClientEmail\": \"myemail@omidtech.co\",\r\n    \"ClientIP\": \"127.0.0.1\",\r\n    \"ClientUserAgent\": \"4234\",\r\n    \"ClientDeviceId\": \"324324\",\r\n    \"ClientPlatform\": \"ANDROID\",\r\n    \"ClientMobileNumber\": \"09111111111\"\r\n}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/Api/v1/PaymentServices/GetCardInfo",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"Api",
+						"v1",
+						"PaymentServices",
+						"GetCardInfo"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

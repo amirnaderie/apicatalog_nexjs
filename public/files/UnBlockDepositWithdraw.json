@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "2e7d7ef1-ea6f-4b3a-95a8-eb7a6c27ffe1",
+		"name": "UnBlockDepositWithdraw",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "UnBlockDepositWithdraw",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "ApiKey",
+						"value": "100",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"DepositNumber\": \"101102103104\",\r\n\t\"ReceiptDate\": \"1402/01/26\",\r\n\t\"Title\": \"رفع مسدودی واریز\",\r\n\t\"Context\": \"رفع انسداد واریز به سپرده\",\r\n\t\"Number\": \"140201261624\",\r\n\t\"Date\": \"1402/01/20\",\r\n\t\"Deadline\": \"1402/01/26\",\r\n\t\"CauseCode\": \"otherBlockCause\",\r\n\t\"BlockOrUnblockPassword\": \"\",\r\n\t\"ContextImage\": \"\",\r\n\t\"SwiftCode\": \"IRR\",\r\n\t\"RelatedLetterIdentifier\": \"356758634099\"\r\n}"
+				},
+				"url": {
+					"raw": "{{sandboxURL}}/BlockUnblock/UnblockDepositWithdraw",
+					"host": [
+						"{{sandboxURL}}"
+					],
+					"path": [
+						"BlockUnblock",
+						"UnblockDepositWithdraw"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

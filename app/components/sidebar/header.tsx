@@ -10,7 +10,7 @@ const Header = ({ selectedmenu }: { selectedmenu?: string }) => {
         <Burger selectedmenu={selectedmenu} />
       </div>
       <a className="text-white  cursor-pointer  no-underline" href="/">
-        بازارچه API بانک سپه
+        بازارچه API
       </a>
       <Link className=" cursor-pointer ml-2 " data-tip="logo" href="/">
         <Image

@@ -1,6 +1,6 @@
 {
   "short_name": "بازارچه API",
-  "name": "بازارچه API امید تک",
+  "name": "بازارچه API",
   "icons": [
     
     {
@@ -36,6 +36,7 @@
     }
   ],
   "start_url": "/",
+  "id":"1", 
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff",

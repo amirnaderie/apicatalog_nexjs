@@ -48,7 +48,7 @@ const SideBar = async ({
                 className="group p-3 no-underline cursor-pointer"
               >
                 <summary
-                  className={`flex cursor-pointer list-none items-center  no-underline justify-between text-black  active:text-white focus:text-white hover:text-white ${
+                  className={`flex cursor-pointer list-none items-center  no-underline justify-between text-black  active:text-white focus:text-white hover:text-zinc-500 ${
                     selectedmenu === item.id.toString()
                       ? "text-white"
                       : "text-black"

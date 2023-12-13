@@ -67,7 +67,7 @@ const MainContent = async ({ selectedmenu }: { selectedmenu?: string }) => {
           </ul>
         </div>
       )}
-      <div className="max-h-[calc(100vh-7rem)] overflow-y-auto grow grid grid-cols-1 mt-20 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-2 py-4  ">
+      <div className="max-h-[calc(100vh-7rem)] overflow-y-auto grow grid grid-cols-1 mt-16 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-2 pb-4  ">
         {apis.map((api, idx) => (
           <div
             key={api.id}
